@@ -91,7 +91,7 @@ module.exports = function(RED) {
                 msg.metadata = metadata;
             }
             catch(err) {
-                node.error(`getMetadata error: ${err.message}`);
+                node.error('ERROR',`getMetadata error: ${err.message}`);
                 return;
             }
 
